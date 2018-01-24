@@ -23,5 +23,7 @@
        <!--   <mapping resource="primero/Nuevos.hbm.xml" />
         <mapping resource="primero/Empleados.hbm.xml" />
         <mapping resource="primero/Departamentos.hbm.xml" />-->
+        
+        
     </session-factory>
 </hibernate-configuration>
