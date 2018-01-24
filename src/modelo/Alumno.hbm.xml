@@ -5,18 +5,14 @@
 			<column name="id" />
 			<generator class="assigned" />
 		</id>
-		
+
 		<property name="nome" type="string">
-			<column name="nome"  />
-		</property>
-		
-		<property name="email" type="string">
-			<column name="email" length="10"/>
+			<column name="nome" />
 		</property>
 
+		<property name="email" type="string">
+			<column name="email" length="10" />
+		</property>
 
 	</class>
-	
-	
-	
 </hibernate-mapping>
