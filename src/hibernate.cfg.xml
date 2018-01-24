@@ -24,6 +24,6 @@
         <mapping resource="primero/Empleados.hbm.xml" />
         <mapping resource="primero/Departamentos.hbm.xml" />-->
         
-        
+<!--         hola -->
     </session-factory>
 </hibernate-configuration>
