@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="modelo.DatosPersonales" table="datoPersonal">
+		<id name="id" type="int">
+			<column name="id"/>
+			<generator class="assigned"/>
+		</id>
+		
+		<property name="telf" type="string">
+			<column name="telf" length="10"/>
+		</property>
+		
+		<one-to-one name="alumno" class="modelo.Alumno" lazy="false" fetch="select"> 
+ 			<column name="idAlumno" not-null="true"/> 
+ 		</one-to-one> 
+		
+	</class>
+</hibernate-mapping>
