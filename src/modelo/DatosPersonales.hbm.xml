@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="modelo.DatosPersonales" table="datoPersonal">
+		<id name="id" type="int">
+			<column name="id"/>
+			<generator class="assigned"/>
+		</id>
+		
+		<property name="telf" type="string">
+			<column name="telf" length="10"/>
+		</property>
+		
+		
+ 
+ 		
+ 		<one-to-one name="alumno" class="modelo.Alumno" cascade="save-update"></one-to-one>
+		
+	</class>
+</hibernate-mapping>
