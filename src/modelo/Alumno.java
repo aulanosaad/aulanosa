@@ -5,8 +5,7 @@ public class Alumno {
 	private Integer id; 
 	private String nome;
 	private String email;
-	
-	
+
 	
 	@Override
 	public String toString() {
