@@ -17,7 +17,7 @@ public class MainExpediente {
 		AlumnoDAO alumnoDAO = new AlumnoDAO();
 		
 		
-		Alumno idAlum = alumnoDAO.findById(new Alumno(), (short) 1);
+		Alumno idAlum = alumnoDAO.findById(new Alumno(), 1);
 		expediente.setFecha(new Date());
 		expediente.setContido("Hostia al profesor");
 		expediente.setIdAlumno(idAlum);

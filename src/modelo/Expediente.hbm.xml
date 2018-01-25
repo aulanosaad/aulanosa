@@ -11,7 +11,7 @@
 		</property>
 
 		<property name="contido" type="string">
-			<column name="contido" length="2000" />
+			<column name="contido" length="200" />
 		</property>
 		
 		<many-to-one name="alumno" class="modelo.Alumno" lazy="false" fetch="select">
