@@ -14,12 +14,10 @@ public class MainTestAsignaturaDao {
 
 		List<Asignatura> resultado = asignaturaDAO.getAll(asignatura);
 
+		System.out.println("SIZE "+resultado.size());
+//		
 		for (int x = 0; x < resultado.size(); x++) {
-
-			System.out.println("" + resultado.get(x).toString());
-
+			System.out.println(resultado.get(x).toString());
 		}
-
 	}
-
 }

@@ -3,27 +3,28 @@
 <hibernate-mapping>
 
 	<class name="modelo.Asignatura" table="asignatura">
-		<id name="id" type="java.lang.Short">
-			<column name="idAsignatura" />
+		<id name="id" type="int">
+			<column name="id" />
 			<generator class="assigned" />
 		</id>
 
-		<property name="nomeAsignatura" type="string">
-			<column name="nomeAsignatura" length="30" />
+		<property name="nome" type="string">
+			<column name="nome" length="30" />
 		</property>
 
-		<property name="codigoExterno" type="string">
-			<column name="codigoExterno" length="5" />
+		<property name="codigoexterno" type="string">
+			<column name="codigoexterno" length="30" />
 		</property>
-	
-		<!--relaciones-->
-		
-<set name="listaAsignatura" table="asignatura"
-inverse="true" lazy="true" fetch="select">
-<key>
- <colum name="idAsignatura" not-null="true"/>
-</key>
-<many-to-many class="modelo.Alumno"/>
-</set>
-</class>
+
+		<!-- relaciones -->
+
+		<set name="listaAlumnos" table="alumnoasignatura" inverse="true"
+			lazy="true" fetch="select">
+			<key>
+				<column name="idAsignatura" not-null="true" />
+			</key>
+			<many-to-many class="modelo.Alumno" />
+		</set>
+
+	</class>
 </hibernate-mapping>

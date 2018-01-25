@@ -10,6 +10,7 @@ import utilidad.dao.GenericDao;
 import modelo.Asignatura;
 
 public class AsignaturaDAO extends GenericDao<Asignatura> {
+	
 	public List<Asignatura> getAsignaturasOrdenadasPorNombre() {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Query consulta = session.createQuery(" from Asignatura order by nomeAsignatura ");
