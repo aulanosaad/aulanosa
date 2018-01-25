@@ -10,9 +10,10 @@
 			<column name="telf" length="10"/>
 		</property>
 		
-		<one-to-one name="alumno" class="modelo.Alumno" lazy="false" fetch="select"> 
- 			<column name="idAlumno" not-null="true"/> 
- 		</one-to-one> 
+		
+ 
+ 		
+ 		<one-to-one name="alumno" class="modelo.Alumno" cascade="save-update"></one-to-one>
 		
 	</class>
 </hibernate-mapping>
