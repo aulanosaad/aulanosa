@@ -19,14 +19,7 @@ public class MainSession {
 		 sesion.close();
 		 System.out.println("FIN");
 		 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> refs/remotes/origin/master
-=======
-		 
->>>>>>> refs/remotes/origin/master
 	}
 
 }
