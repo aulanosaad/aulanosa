@@ -8,43 +8,38 @@ public class Expediente {
 	private Integer id;
 	private Date fecha;
 	private String contido;
-	private Alumno idAlumno;
-
+	private Alumno Alumno;
+	
 	public Integer getId() {
 		return id;
 	}
-
 	public void setId(Integer id) {
 		this.id = id;
 	}
-
 	public Date getFecha() {
 		return fecha;
 	}
-
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
-
 	public String getContido() {
 		return contido;
 	}
-
 	public void setContido(String contido) {
 		this.contido = contido;
 	}
-
-	public Alumno getIdAlumno() {
-		return idAlumno;
+	public Alumno getAlumno() {
+		return Alumno;
 	}
-
-	public void setIdAlumno(Alumno idAlumno) {
-		this.idAlumno = idAlumno;
+	public void setAlumno(Alumno alumno) {
+		Alumno = alumno;
 	}
-
 	@Override
 	public String toString() {
-		return "Expediente [id=" + id + ", fecha=" + fecha + ", contido=" + contido + ", idAlumno=" + idAlumno + "]";
+		return "Expediente [id=" + id + ", fecha=" + fecha + ", contido=" + contido + ", Alumno=" + Alumno + "]";
 	}
 
+
+	
+	
 }
