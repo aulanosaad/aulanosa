@@ -20,6 +20,10 @@ public class MainSession {
 		 System.out.println("FIN");
 		 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		 
+>>>>>>> refs/remotes/origin/master
 =======
 		 
 >>>>>>> refs/remotes/origin/master

@@ -48,7 +48,11 @@ public class GenericDao  <T> implements InterfaceDAO<T>{
 
 	@Override
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public T findById(T t, Short id) {
+=======
+	public T findById(T t, Integer id) {
+>>>>>>> refs/remotes/origin/master
 =======
 	public T findById(T t, Integer id) {
 >>>>>>> refs/remotes/origin/master
