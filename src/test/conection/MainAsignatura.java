@@ -24,7 +24,7 @@ public class MainAsignatura {
 		Session session = sessionFactory.openSession();
 		
 		//completar con la query
-		Query consulta = session.createQuery(" from Departamento ");
+		Query consulta = session.createQuery(" from Asignatura ");
 		List<Asignatura> resultado = consulta.list();
 		
 		for (int x = 0; x < resultado.size(); x++) {

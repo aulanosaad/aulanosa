@@ -18,11 +18,9 @@
        <!-- Mappings do hbm -->
        <mapping resource="modelo/Alumno.hbm.xml" />
        <mapping resource="modelo/Asistencia.hbm.xml" />
+        <mapping resource="modelo/Asignatura.hbm.xml" />
       
-      
-       <!--   <mapping resource="primero/Nuevos.hbm.xml" />
-        <mapping resource="primero/Empleados.hbm.xml" />
-        <mapping resource="primero/Departamentos.hbm.xml" />-->
+       
     </session-factory>
 </hibernate-configuration>
 <?xml version="1.0" encoding="utf-8"?>
