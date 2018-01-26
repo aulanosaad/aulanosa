@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+
+	<class name="modelo.Asignatura" table="asignatura">
+		<id name="id" type="java.lang.Short">
+			<column name="idAsignatura" />
+			<generator class="assigned" />
+		</id>
+
+		<property name="nomeAsignatura" type="string">
+			<column name="nomeAsignatura" length="30" />
+		</property>
+
+		<property name="codigoExterno" type="string">
+			<column name="codigoExterno" length="5" />
+		</property>
+	
+		<!--relaciones-->
+		
+<set name="listaAsignatura" table="asignatura"
+inverse="true" lazy="true" fetch="select">
+<key>
+ <colum name="idAsignatura" not-null="true"/>
+</key>
+<many-to-many class="modelo.Alumno"/>
+</set>
+</class>
+</hibernate-mapping>
