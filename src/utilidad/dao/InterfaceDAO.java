@@ -31,7 +31,15 @@ public interface InterfaceDAO<T> {
 		 * @return T
 		 * Busqueda por ID
 		 */
+<<<<<<< HEAD
+<<<<<<< HEAD
+		public T findById(T t, Short id);
+=======
 		public T findById(T t, Integer id);
+>>>>>>> refs/remotes/origin/master
+=======
+		public T findById(T t, Integer id);
+>>>>>>> refs/remotes/origin/master
 	
 		/**
 		 * @param t
