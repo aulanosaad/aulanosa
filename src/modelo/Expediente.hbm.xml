@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="modelo.Expediente" table="expediente">
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="assigned" />
+		</id>
+
+		<property name="fecha" type="date">
+			<column name="fecha" />
+		</property>
+
+		<property name="contido" type="string">
+			<column name="contido" length="2000" />
+		</property>
+		
+		<many-to-one name="alumno" class="modelo.Alumno" lazy="false" fetch="select">
+			<column name="idAlumno" not-null="true"/>
+		</many-to-one>
+
+
+	</class>
+</hibernate-mapping>
