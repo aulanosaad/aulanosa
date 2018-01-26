@@ -47,7 +47,7 @@ public class GenericDao  <T> implements InterfaceDAO<T>{
 	}
 
 	@Override
-	public T findById(T t, Short id) {
+	public T findById(T t, Integer id) {
 		// Busca como será findby
 		
 		    String hql = "from "+t.getClass().getName()+" where id=:id";
