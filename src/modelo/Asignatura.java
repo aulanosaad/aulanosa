@@ -1,57 +1,58 @@
 package modelo;
 
 import java.util.List;
+import java.util.Set;
 
 public class Asignatura {
 
 	/**
-	 *  @author Jose Prieto
-	 *  Clase que representa la tabla "Asignatura"
-	 *  Tiene correspondecia con el HBM Asignatura.hbm.xml
+	 * @author Jose Prieto Clase que representa la tabla "Asignatura" Tiene
+	 *         correspondecia con el HBM Asignatura.hbm.xml
 	 */
-	
-	private Short idAsignatura;
-	private String nomeAsignatura;
-	private String codigoExterno;
-	private List <Alumno> listaAlumnos;
-	
-	/* Construct */
-	
-	public Asignatura() {
-		super();
+
+	private Integer id;
+	private String nome;
+	private String codigoexterno;
+	private Set<Alumno> listaAlumnos;
+
+	public Integer getId() {
+		return id;
 	}
 
-	/*Getter and Setter*/
-	
-	public int getIdAsignatura() {
-		return idAsignatura;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
-	public void setIdAsignatura(Short idAsignatura) {
-		this.idAsignatura = idAsignatura;
+	public String getNome() {
+		return nome;
 	}
 
-	public String getNomeAsignatura() {
-		return nomeAsignatura;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
-	public void setNomeAsignatura(String nomeAsignatura) {
-		this.nomeAsignatura = nomeAsignatura;
+	public String getCodigoexterno() {
+		return codigoexterno;
 	}
 
-	public String getCodigoExterno() {
-		return codigoExterno;
+	public void setCodigoexterno(String codigoexterno) {
+		this.codigoexterno = codigoexterno;
 	}
 
-	public void setCodigoExterno(String codigoExterno) {
-		this.codigoExterno = codigoExterno;
+	public Set<Alumno> getListaAlumnos() {
+		return listaAlumnos;
 	}
 
-	/* ToString */
-	
+	public void setListaAlumnos(Set<Alumno> listaAlumnos) {
+		this.listaAlumnos = listaAlumnos;
+	}
+
 	@Override
 	public String toString() {
-		return "Asignatura [idAsignatura=" + idAsignatura + ", nomeAsignatura=" + nomeAsignatura + ", codigoExterno="
-				+ codigoExterno + ", listaAlumnos=" + listaAlumnos + "]";
+		return "Asignatura [id=" + id + ", nome=" + nome + ", codigoexterno=" + codigoexterno + ", listaAlumnos="
+				+ listaAlumnos + "]";
 	}
+
 }
+
+/* Construct */
