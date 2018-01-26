@@ -18,6 +18,7 @@
        <!-- Mappings do hbm -->
        <mapping resource="modelo/Alumno.hbm.xml" />
        <mapping resource="modelo/Asistencia.hbm.xml" />
+       <mapping resource="modelo/Asignatura.hbm.xml"/>
       
       
        <!--   <mapping resource="primero/Nuevos.hbm.xml" />
