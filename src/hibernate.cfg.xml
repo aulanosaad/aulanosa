@@ -19,7 +19,8 @@
        <mapping resource="modelo/Alumno.hbm.xml" />
        <mapping resource="modelo/Asistencia.hbm.xml" />
        <mapping resource="modelo/Asignatura.hbm.xml"/>
-      
+       <mapping resource="modelo/DatosPersonales.hbm.xml" />
+       <mapping resource="modelo/Expediente.hbm.xml" />      
       
        <!--   <mapping resource="primero/Nuevos.hbm.xml" />
         <mapping resource="primero/Empleados.hbm.xml" />

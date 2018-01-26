@@ -47,14 +47,19 @@ public class GenericDao  <T> implements InterfaceDAO<T>{
 	}
 
 	@Override
+
 	public T findById(T t, Short id) {
+
+		public T findById(T t, Integer id) {
+
+	public T findById(T t, Integer id) {
 		// Busca como será findby
 		
 		    String hql = "from "+t.getClass().getName()+" where id=:id";
-		    hql = hql.replace(":id", id.toString());
- 		    
+  		    
 		    Session sesion = HibernateUtil.getSessionFactory().openSession();
 		    Query consulta = sesion.createQuery(hql);
+		    consulta.setParameter("id", id);
 		    List<T> resultado = consulta.list(); 
 		    T elementoBuscado = null;
 		    if (resultado != null && !resultado.isEmpty()) {
