@@ -10,11 +10,7 @@ public class Alumno {
 	private Set<Alumno> listaAsignaturas;
 
 
-	
-	@Override
-	public String toString() {
-		return "Alumno [id=" + id + ", nome=" + nome + ", email=" + email + "]";
-	}
+	 
 	public Integer getId() {
 		return id;
 	}

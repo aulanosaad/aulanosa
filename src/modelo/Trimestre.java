@@ -1,4 +1,6 @@
-package src.modelo;
+package modelo;
+
+import java.util.Date;
 
 public class Trimestre{
 	

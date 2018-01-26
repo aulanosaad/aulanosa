@@ -46,11 +46,7 @@ public class GenericDao  <T> implements InterfaceDAO<T>{
 		 return t;
 	}
 
-	@Override
-
-	public T findById(T t, Short id) {
-
-		public T findById(T t, Integer id) {
+ 
 
 	public T findById(T t, Integer id) {
 		// Busca como será findby
@@ -80,6 +76,7 @@ public class GenericDao  <T> implements InterfaceDAO<T>{
 		return resultado;
 	}
 
+ 
 	
 	
 	

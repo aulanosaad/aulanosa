@@ -1,3 +1,10 @@
+package test.conection.asignatura;
+
+
+import java.util.List;
+
+import dao.AsignaturaDAO;
+import modelo.Asignatura;
 
 public class MainTestAsignaturaDAO {
 

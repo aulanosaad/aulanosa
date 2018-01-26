@@ -32,13 +32,11 @@ public interface InterfaceDAO<T> {
 		 * Busqueda por ID
 		 */
 
-		public T findById(T t, Short id);
-
 		public T findById(T t, Integer id);
 
+ 
 		
-		public T findById(T t, Integer id);
-
+ 
 		
 		/**
 		 * @param t
