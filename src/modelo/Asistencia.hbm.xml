@@ -4,22 +4,22 @@
 <!-- Generated 26-ene-2018 10:22:27 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
     
-    <class name="modelo.Asistencia" table="ASISTENCIA">
+    <class name="modelo.Asistencia" table="asistencia">
         <id name="id" type="int">
             <column name="id" />
             <generator class="assigned" />
         </id>
      
         <property name="fecha" type="date">
-            <column name="FECHA" />
+            <column name="fecha" />
         </property>
      
         <property name="asiste" type="boolean">
-            <column name="ASISTE" />
+            <column name="asiste" />
         </property>
         
-<!--         <many-to-one name="alumno" class="modelo.Alumno" fetch="join"> -->
-<!--             <column name="ALUMNO" /> -->
-<!--         </many-to-one> -->
+        <many-to-one name="alumno" class="modelo.Alumno" fetch="join">
+            <column name="idAlumno" />
+        </many-to-one>
     </class>
 </hibernate-mapping>

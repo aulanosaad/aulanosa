@@ -22,25 +22,25 @@ public class MainAsistencia {
 
 		asistencia.setId(1);
 		asistencia.setFecha(new Date());
-		asistencia.setAsiste(true);
+		asistencia.setAsiste(false);
 		asistencia.setAlumno(alumno1);
 
 		// crear asistencia
-		 asistenciaDAO.create(asistencia);
+	    // asistenciaDAO.create(asistencia);
 
 		// Actualizar asistencia
-		// asitenciaDAO.update(asistencia);
+		// asistenciaDAO.update(asistencia);
 
 		// borrar asistencia
-		// asistenciaDAO.delete(asistencia);
+		 asistenciaDAO.delete(asistencia);
 
 		// Mostrar todo los asistencia
-//		List<Asistencia> resultado = asistenciaDAO.getAll(new Asistencia());
-//
-//		Iterator<Asistencia> iter = resultado.iterator();
-//		while (iter.hasNext()) {
-//			System.out.println(iter.next().toString());
-//		}
+		List<Asistencia> resultado = asistenciaDAO.getAll(new Asistencia());
+
+		Iterator<Asistencia> iter = resultado.iterator();
+		while (iter.hasNext()) {
+			System.out.println(iter.next().toString());
+		}
 
 	}
 
