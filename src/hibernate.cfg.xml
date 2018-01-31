@@ -20,6 +20,7 @@
        <mapping resource="modelo/Asistencia.hbm.xml" />
        <mapping resource="modelo/Asignatura.hbm.xml" />
        <mapping resource="modelo/Expediente.hbm.xml" />
+       <mapping resource="modelo/DatosPersonales.hbm.xml" />
       
        
     </session-factory>
