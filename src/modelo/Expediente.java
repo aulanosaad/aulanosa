@@ -35,7 +35,7 @@ public class Expediente {
 	}
 	@Override
 	public String toString() {
-		return "Expediente [id=" + id + ", fecha=" + fecha + ", contido=" + contido + ", Alumno=" + Alumno + "]";
+		return "Expediente [id=" + id + ", fecha=" + fecha + ", contido=" + contido +"]";
 	}
 
 
