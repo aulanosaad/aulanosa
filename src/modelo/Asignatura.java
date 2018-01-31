@@ -9,6 +9,7 @@ public class Asignatura {
 	 * @author Jose Prieto Clase que representa la tabla "Asignatura" Tiene
 	 *         correspondecia con el HBM Asignatura.hbm.xml
 	 */
+	//HOLA MUNDO
 
 	private Integer id;
 	private String nome;
