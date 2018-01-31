@@ -1,13 +1,21 @@
 package modelo;
 
+import java.util.Set;
+
 public class Alumno {
 	
 	private Integer id; 
 	private String nome;
 	private String email;
+	private Set<Asignatura> listaAsignaturas;
 	
 	
-	
+	public Set<Asignatura> getListaAsignaturas() {
+		return listaAsignaturas;
+	}
+	public void setListaAsignaturas(Set<Asignatura> listaAsignaturas) {
+		this.listaAsignaturas = listaAsignaturas;
+	}
 	@Override
 	public String toString() {
 		return "Alumno [id=" + id + ", nome=" + nome + ", email=" + email + "]";

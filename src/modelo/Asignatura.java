@@ -14,7 +14,7 @@ public class Asignatura {
 	private Integer id;
 	private String nome;
 	private String codigoexterno;
-	
+	private Set<Alumno> listaAlumnos;
 
 	public Integer getId() {
 		return id;
@@ -41,6 +41,16 @@ public class Asignatura {
 	}
 
 	
+	
+	
+	public Set<Alumno> getListaAlumnos() {
+		return listaAlumnos;
+	}
+
+	public void setListaAlumnos(Set<Alumno> listaAlumnos) {
+		this.listaAlumnos = listaAlumnos;
+	}
+
 	@Override
 	public String toString() {
 		return "Asignatura [id=" + id + ", nome=" + nome + ", codigoexterno=" + codigoexterno +  "]";
