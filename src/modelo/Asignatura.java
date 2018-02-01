@@ -9,6 +9,7 @@ public class Asignatura {
 	 * @author Jose Prieto Clase que representa la tabla "Asignatura" Tiene
 	 *         correspondecia con el HBM Asignatura.hbm.xml
 	 */
+	//HOLA MUNDO
 
 	private Integer id;
 	private String nome;
@@ -39,6 +40,9 @@ public class Asignatura {
 		this.codigoexterno = codigoexterno;
 	}
 
+	
+	
+	
 	public Set<Alumno> getListaAlumnos() {
 		return listaAlumnos;
 	}
@@ -49,8 +53,7 @@ public class Asignatura {
 
 	@Override
 	public String toString() {
-		return "Asignatura [id=" + id + ", nome=" + nome + ", codigoexterno=" + codigoexterno + ", listaAlumnos="
-				+ listaAlumnos + "]";
+		return "Asignatura [id=" + id + ", nome=" + nome + ", codigoexterno=" + codigoexterno +  "]";
 	}
 
 }

@@ -8,6 +8,9 @@ public class Asistencia {
 	private Boolean asiste;
 	private Alumno alumno;
 	
+	public Asistencia() {
+ 	}
+	
 	public Integer getId() {
 		return id;
 	}
