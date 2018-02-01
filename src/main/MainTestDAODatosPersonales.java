@@ -1,4 +1,4 @@
-package test.conection.datospersonales;
+package main;
 
 import dao.AlumnoDAO;
 import dao.DatosPersonalesDAO;

@@ -21,7 +21,7 @@
        <mapping resource="modelo/Asignatura.hbm.xml" />
        <mapping resource="modelo/Expediente.hbm.xml" />
        <mapping resource="modelo/DatosPersonales.hbm.xml" />
-      
+       <mapping resource="modelo/Trimestre.hbm.xml"/>
        
     </session-factory>
 </hibernate-configuration>

@@ -1,1 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- id(int), nome(string), fechaInicio(date),
+	fechaFin(date), idAlumno(Alumno) -->
+	
+<hibernate-mapping>
+	<class name="modelo.Trimestre" table="trimestre">
+		<id name="id" type="integer">
+			<column name="id"/>
+			<generator class="assigned"/>
+		</id>
+		
+		<property name="nome" type="string">
+			<column name="nome"/>
+		</property>
+		
+		<property name="fechaInicio" type="date">
+			<column name="fechaInicio"/>
+		</property>
+		
+		<property name="fechaFin" type="date">
+			<column name="fechaFin"/>
+		</property>
+		
+		<many-to-one name="alumno" class="modelo.Alumno" lazy="false" fetch="select">
+			<column name="idAlumno" not-null="true"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>
